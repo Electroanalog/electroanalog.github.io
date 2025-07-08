@@ -1,0 +1,70 @@
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+img.logo {
+  width: auto;
+  height: auto;
+  margin-bottom: 0;  
+  vertical-align: bottom;
+}
+.tagline {
+  font-size: 1rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  opacity: 0.85;
+  margin-top: 0; 
+  margin-bottom: 2.5rem;
+  line-height: 1.4;
+}
+.projects {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+.project {
+  margin-bottom: 2rem;
+}
+.project a {
+  color: #58a6ff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+.description {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 0.3rem;
+}
+.home {
+  text-align: center;
+}
+.footer {
+  margin-top: 4rem;
+  padding-top: 0.25rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  text-align: left;
+  border-top: 1px solid #30363d;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .contact {
+  margin: 0;
+  padding: 0.25rem 0 0 0;
+}
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: normal;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
