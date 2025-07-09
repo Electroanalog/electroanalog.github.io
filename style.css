@@ -1,24 +1,36 @@
 body {
   background-color: #0d1117;
+  background-image: url("/img/grille.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
   color: #c9d1d9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 2rem;
   text-align: center;
 }
+
 img.logo {
-  width: auto;
+  width: 100%;
+  max-width: 535px;
   height: auto;
-  margin-bottom: 0;  
+  margin-bottom: 15px;  
   vertical-align: bottom;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
 }
+
 .tagline {
   font-size: 1rem;
   font-family: "Arial Narrow", Arial, sans-serif;
-  opacity: 0.85;
-  margin-top: 0; 
-  margin-bottom: 2.5rem;
+  opacity: 1;
+  margin-top: 0.5rem; 
+  margin-bottom: 2rem;
   line-height: 1.4;
+}
+.project-title {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 .projects {
   max-width: 700px;
@@ -36,6 +48,40 @@ img.logo {
 }
 .project a:hover {
   text-decoration: underline;
+}
+.project-code {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 0.2rem;
+}
+.project-with-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.project-with-image .thumb {
+  margin-left: 1rem;
+}
+.project-with-image .thumb img {
+  width: 190px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.project-with-image .thumb img:hover {
+  transform: scale(1.03);
+}
+.project-with-image .text {
+  width: calc(100% - 210px);
+}
+.project-with-image img {
+  width: 190px;
+  height: auto;
+  margin-left: 1rem;
+  transition: transform 0.2s ease;
+}
+.project-with-image img:hover {
+  transform: scale(1.03);
 }
 .description {
   font-size: 0.95rem;

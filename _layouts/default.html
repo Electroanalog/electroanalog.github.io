@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }} | Electroanalog VICE</title>
+  <style>body { background-color: #0d1117; }</style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <link rel="stylesheet" href="/style.css">
@@ -11,11 +12,17 @@
   <div class="projects">
     {{ content }}
   </div>
-  <script>
-    document.querySelectorAll('.projects a').forEach(link => {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
-    });
-  </script>
+	<script>
+	  // Redirect electroanalog.com -> www.electroanalog.com
+	  if (location.hostname === "electroanalog.com") {
+		location.href = "https://www.electroanalog.com" + location.pathname + location.search + location.hash;
+	  }
+
+	  // .projects -> New tab
+	  document.querySelectorAll('.projects a').forEach(link => {
+		link.setAttribute('target', '_blank');
+		link.setAttribute('rel', 'noopener noreferrer');
+	  });
+	</script>
 </body>
 </html>
