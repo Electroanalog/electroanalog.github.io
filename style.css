@@ -17,7 +17,7 @@ img.logo {
   height: auto;
   margin-bottom: 15px;  
   vertical-align: bottom;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+  filter: drop-shadow(6px 7px 3px black);
 }
 
 .tagline {
@@ -79,6 +79,7 @@ img.logo {
   height: auto;
   margin-left: 1rem;
   transition: transform 0.2s ease;
+  filter: drop-shadow(6px 7px 3px black);
 }
 .project-with-image img:hover {
   transform: scale(1.03);
