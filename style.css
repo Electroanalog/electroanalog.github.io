@@ -54,6 +54,21 @@ img.logo {
   opacity: 0.6;
   margin-top: 0.2rem;
 }
+.project-with-image .project-title-text {
+  display: inline-block;
+}
+.project-with-image .project-title-text a {
+  white-space: nowrap;
+  display: inline-block;
+}
+.project-with-image .description {
+  min-width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: fit-content;
+  text-align: left;
+  max-width: 100%;
+}
 .project-with-image {
   display: flex;
   justify-content: space-between;
@@ -64,7 +79,7 @@ img.logo {
   margin-left: 1rem;
 }
 .project-with-image .thumb img {
-  width: 190px;
+  width: 200px;
   height: auto;
   transition: transform 0.2s ease;
 }
@@ -88,6 +103,15 @@ img.logo {
   font-size: 0.95rem;
   opacity: 0.85;
   margin-top: 0.3rem;
+}
+.also-available {
+  color: #6ea6ff;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  font-weight: normal;
+  margin-bottom: 1px;
+  margin-left: auto;
+  white-space: nowrap;
 }
 .home {
   text-align: center;

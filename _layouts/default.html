@@ -14,15 +14,22 @@
   </div>
 	<script>
 	  // Redirect electroanalog.com -> www.electroanalog.com
-	  if (location.hostname === "electroanalog.com") {
-		location.href = "https://www.electroanalog.com" + location.pathname + location.search + location.hash;
-	  }
+		  if (location.hostname === "electroanalog.com") {
+			location.href = "https://www.electroanalog.com" + location.pathname + location.search + location.hash;
+		  }
 
 	  // .projects -> New tab
-	  document.querySelectorAll('.projects a').forEach(link => {
-		link.setAttribute('target', '_blank');
-		link.setAttribute('rel', 'noopener noreferrer');
-	  });
+		  document.querySelectorAll('.projects a').forEach(link => {
+			link.setAttribute('target', '_blank');
+			link.setAttribute('rel', 'noopener noreferrer');
+		  });
+	  // syncDescMinWidth
+		document.querySelectorAll('.project-title-text').forEach(function(titleDiv) {
+		  const description = titleDiv.nextElementSibling;
+		  if (description && description.classList.contains('description')) {
+			description.style.minWidth = titleDiv.offsetWidth + "px";
+		  }
+		});
 	</script>
 </body>
 </html>
