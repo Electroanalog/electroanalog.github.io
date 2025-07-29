@@ -10,7 +10,7 @@ title: Home
 	<div style="display: grid; place-items: center; position: relative;">
 	  <img src="/img/projects-title.png" alt="GitHub DIY Projects" width="280" class="project-title" />
 	  <a style="position: absolute; left: calc(50% - 175px); top: 50%; transform: translateY(-50%);">
-	    <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(6px 7px 3px black);">
+	    <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(2px 2px 0px black);">
 	      <path fill="#f0f6fc" d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 
 	          0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554
 	          -.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907
